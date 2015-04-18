@@ -4,11 +4,11 @@
 ; and counting the number of iterations.
 
 ; Load initial values to memory
-INI 0x100 0xfa3 ; dividend: 4003
-INI 0x101 0x52  ; divisor:  82
-INI 0x102 0x1   ; unit
-INI 0x103 0x0   ; remainder
-INI 0x104 0x0   ; quotient
+INI 0x100 0x13 ; dividend: 19
+INI 0x101 0x5  ; divisor:  5
+INI 0x102 0x1  ; unit
+INI 0x103 0x0  ; remainder
+INI 0x104 0x0  ; quotient
 
 ; Actual program code
 LOAD  0x100 ; load dividend
