@@ -16,7 +16,7 @@ and it understands a language with the following instruction set:
 | ``0110``| ``JNE X``    | ``if ACC!=0 pc = X``       | 
 | ``0111``| ``STOP``     | ``stop``                   | 
 
-The extra assembly pseudoinstruction ``INI X Y`` is avaible, in order to load 
+The extra assembly pseudoinstruction ``INI X Y`` is available, in order to load 
 values into the memory. Values range is from -2<sup>11</sup> to 
 2<sup>11</sup> - 1, encoded in two's complement.
 All the values are statically loaded before the program start, regardless 
@@ -37,7 +37,20 @@ source file
 
 Run
 ===
-To run a program without interruptions, the emulator should be invoked as:
+The program has been implemented both into a simple terminal script and into a
+tkinter graphic application.
+
+To start the graphic application (needs the [Tk](http://www.tcl.tk/) support,
+it should be bundled with most python installations), run:
+```bash
+python mu0_graphic.py
+```
+With the graphic application you can write your
+code or open an existing source file, save your program or run it.
+
+If you do not have Tk support, you can use the alternate script. To run a
+program in the console, without interruptions, the emulator should be 
+invoked as:
 ```bash
 python mu0.py source_filename
 ```
